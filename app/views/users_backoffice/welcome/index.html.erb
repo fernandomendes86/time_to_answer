@@ -1,0 +1,23 @@
+<h1>Seja bem-vindo!!!</h1><br>
+<div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+  <div class="tile-stats">
+    <div class="icon"><i class="fa fa-list" style="color:blue"></i></div>
+    <div class="count"><%= @user_statistic.total_questions %></div>
+    <h3>Total</h3>
+  </div>
+</div>
+<div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+  <div class="tile-stats">
+    <div class="icon"><i class="fa fa-check-circle" style="color:green"></i></div>
+    <div class="count"><%= @user_statistic.right_questions %></div>
+    <h3>Certas</h3>
+  </div>
+</div>
+<div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+  <div class="tile-stats">
+    <div class="icon"><i class="fa fa-times-circle" style="color:red"></i></div>
+    <div class="count"><%= @user_statistic.wrong_questions %></div>
+    <h3>Erradas</h3>
+  </div>
+</div>
+
