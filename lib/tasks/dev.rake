@@ -19,6 +19,7 @@ namespace :dev do
   		show_spinner("Migrando BD...") do
   			%x(rails db:migrate)
       end
+    end
       
       show_spinner("Cadastrando Admin Padrão...") do
   			%x(rails dev:add_default_admin)
@@ -40,9 +41,9 @@ namespace :dev do
   			%x(rails dev:add_answers_and_questions)
       end
       
-  	else
-  		puts 'Você não está no ambiente de desenvolvimento!'
-    end  
+  	#else
+  	  #puts 'Você não está no ambiente de desenvolvimento!'
+    #end  
   end
 
   desc "Adiciona o administrador padrão"
