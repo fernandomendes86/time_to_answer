@@ -66,6 +66,7 @@ group :development do
   gem 'capistrano-rvm'
   gem 'capistrano-bundler', '~> 2.0'
   gem "capistrano-rails", "~> 1.6", require: false
+  gem 'capistrano-passenger', '~> 0.2.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
@@ -81,6 +82,7 @@ end
 
 group :production do
   gem 'mysql2'
+  gem 'passenger'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
