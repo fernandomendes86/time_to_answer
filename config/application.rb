@@ -16,6 +16,7 @@ module TimeToAnswer
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
 
-    config.assets.path << Rails.root.join('node_modules', 'bootstrap', 'fonts')
+    # Bootstrap Glyphicons Fix
+    config.assets.paths << Rails.root.join('node_modules','bootstrap','fonts')
   end
 end
