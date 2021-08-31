@@ -11,3 +11,14 @@
  *= require jquery-ui/themes/base/theme
  *= require custom
 */
+
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: asset_path('glyphicons-halflings-regular.eot');
+  src: asset_path('glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'); 
+  src: asset_path('glyphicons-halflings-regular.woff2') format('woff2');
+  src: asset_path('glyphicons-halflings-regular.woff') format('woff');
+  src: asset_path('glyphicons-halflings-regular.ttf') format('truetype');
+  src: asset_path('glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
