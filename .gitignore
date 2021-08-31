@@ -33,3 +33,7 @@
 
 # Ignore database.yml
 /config/database.yml
+
+# Ignore pwd_git
+/pwd_git
+
