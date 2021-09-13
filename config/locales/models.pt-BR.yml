@@ -32,6 +32,7 @@
         updated_at: Atualizado em
       user_profile:
         id: Código
+        zip_code: Cep
         address: Endereço
         gender: Sexo
         birthdate: Date de Nascimento
