@@ -5,7 +5,7 @@ class AdminsBackoffice::QuestionsController < AdminsBackofficeController
   
   def index
     @questions = Question.includes(:subject)
-                          .order(:description)
+                          .order(:id)
                           .page(params[:page])  
   end  
   
