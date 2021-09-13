@@ -110,6 +110,16 @@ namespace :dev do
     end 
   end
 
+  desc "Adiociona todas as respostas para o redis"
+  task add_answers_to_redis: :environment do
+    show_spinner("Adiocionando todas as respostas para o redis...") do
+      redis = Redis.new
+      Answer.find_each do |answer|
+        redis.set(answer.id, "#{answer.question.id}@@#{answer.correct}")
+      end
+    end 
+  end
+
   private
 
   def create_question_params(subject = Subject.all.sample)
